@@ -10,7 +10,7 @@ import android.widget.TextView;
 import android.view.View;
 
 import com.example.chittopot.R;
-import com.example.chittopot.ml.MyModel;
+import com.example.chittopot.ml.MyModel10;
 
 import org.tensorflow.lite.DataType;
 import org.tensorflow.lite.support.tensorbuffer.TensorBuffer;
@@ -27,6 +27,8 @@ import java.util.Arrays;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
+
+import com.example.chittopot.ml.MyModel10;
 import com.vdurmont.emoji.EmojiParser;
 import com.vdurmont.emoji.Emoji;
 import com.vdurmont.emoji.EmojiManager;
@@ -37,7 +39,7 @@ public class HomeActivity extends AppCompatActivity {
     Button button;
     TextView textView;
     EditText editText;
-    MyModel model;
+    MyModel10 model;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -49,7 +51,7 @@ public class HomeActivity extends AppCompatActivity {
         editText = findViewById(R.id.msg);
 
         try {
-            model = MyModel.newInstance(this);
+            model = MyModel10.newInstance(this);
         } catch (IOException e) {
             e.printStackTrace();
         }
@@ -63,7 +65,7 @@ public class HomeActivity extends AppCompatActivity {
                     TensorBuffer inputFeature0 = prepareInputData(inputText);
 
                     if (inputFeature0 != null) {
-                        MyModel.Outputs outputs = model.process(inputFeature0);
+                        MyModel10.Outputs outputs = model.process(inputFeature0);
                         TensorBuffer outputFeature0 = outputs.getOutputFeature0AsTensorBuffer();
 
                         if (outputFeature0 != null) {
