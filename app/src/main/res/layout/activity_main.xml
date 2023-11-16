@@ -15,4 +15,12 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
+    <Button
+        android:id="@+id/b1"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:text="Button"
+        tools:layout_editor_absoluteX="202dp"
+        tools:layout_editor_absoluteY="416dp" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
