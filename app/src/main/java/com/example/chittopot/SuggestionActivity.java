@@ -52,14 +52,15 @@ public class SuggestionActivity extends AppCompatActivity {
                 switch (item.getItemId()) {
                     case R.id.mHome:
 
-                       // Intent intent=new Intent(getApplicationContext(),slist.class);
-                       // startActivity(intent);
+                        Intent intent=new Intent(getApplicationContext(),addvideo.class);
+                       startActivity(intent);
+
                         drawerLayout.closeDrawers();
                         break;
 
                     case R.id.mShare:
-                      //  Intent intent2=new Intent(getApplicationContext(),prayershow.class);
-                       // startActivity(intent2);
+                        Intent intent2=new Intent(getApplicationContext(),dashboard.class);
+                       startActivity(intent2);
                         drawerLayout.closeDrawers();
                         break;
                     case R.id.mDashboard:

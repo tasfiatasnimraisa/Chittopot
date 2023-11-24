@@ -9,6 +9,39 @@
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
         <option name="modules">
           <set>
+            <option value="$USER_HOME$/OneDrive/Desktop/ExoPlayer/extensions/av1" />
+            <option value="$USER_HOME$/OneDrive/Desktop/ExoPlayer/extensions/cast" />
+            <option value="$USER_HOME$/OneDrive/Desktop/ExoPlayer/extensions/cronet" />
+            <option value="$USER_HOME$/OneDrive/Desktop/ExoPlayer/extensions/ffmpeg" />
+            <option value="$USER_HOME$/OneDrive/Desktop/ExoPlayer/extensions/flac" />
+            <option value="$USER_HOME$/OneDrive/Desktop/ExoPlayer/extensions/ima" />
+            <option value="$USER_HOME$/OneDrive/Desktop/ExoPlayer/extensions/leanback" />
+            <option value="$USER_HOME$/OneDrive/Desktop/ExoPlayer/extensions/media2" />
+            <option value="$USER_HOME$/OneDrive/Desktop/ExoPlayer/extensions/mediasession" />
+            <option value="$USER_HOME$/OneDrive/Desktop/ExoPlayer/extensions/okhttp" />
+            <option value="$USER_HOME$/OneDrive/Desktop/ExoPlayer/extensions/opus" />
+            <option value="$USER_HOME$/OneDrive/Desktop/ExoPlayer/extensions/rtmp" />
+            <option value="$USER_HOME$/OneDrive/Desktop/ExoPlayer/extensions/vp9" />
+            <option value="$USER_HOME$/OneDrive/Desktop/ExoPlayer/extensions/workmanager" />
+            <option value="$USER_HOME$/OneDrive/Desktop/ExoPlayer/library/all" />
+            <option value="$USER_HOME$/OneDrive/Desktop/ExoPlayer/library/common" />
+            <option value="$USER_HOME$/OneDrive/Desktop/ExoPlayer/library/container" />
+            <option value="$USER_HOME$/OneDrive/Desktop/ExoPlayer/library/core" />
+            <option value="$USER_HOME$/OneDrive/Desktop/ExoPlayer/library/dash" />
+            <option value="$USER_HOME$/OneDrive/Desktop/ExoPlayer/library/database" />
+            <option value="$USER_HOME$/OneDrive/Desktop/ExoPlayer/library/datasource" />
+            <option value="$USER_HOME$/OneDrive/Desktop/ExoPlayer/library/decoder" />
+            <option value="$USER_HOME$/OneDrive/Desktop/ExoPlayer/library/effect" />
+            <option value="$USER_HOME$/OneDrive/Desktop/ExoPlayer/library/extractor" />
+            <option value="$USER_HOME$/OneDrive/Desktop/ExoPlayer/library/hls" />
+            <option value="$USER_HOME$/OneDrive/Desktop/ExoPlayer/library/muxer" />
+            <option value="$USER_HOME$/OneDrive/Desktop/ExoPlayer/library/rtsp" />
+            <option value="$USER_HOME$/OneDrive/Desktop/ExoPlayer/library/smoothstreaming" />
+            <option value="$USER_HOME$/OneDrive/Desktop/ExoPlayer/library/transformer" />
+            <option value="$USER_HOME$/OneDrive/Desktop/ExoPlayer/library/ui" />
+            <option value="$USER_HOME$/OneDrive/Desktop/ExoPlayer/robolectricutils" />
+            <option value="$USER_HOME$/OneDrive/Desktop/ExoPlayer/testdata" />
+            <option value="$USER_HOME$/OneDrive/Desktop/ExoPlayer/testutils" />
             <option value="$PROJECT_DIR$" />
             <option value="$PROJECT_DIR$/app" />
           </set>

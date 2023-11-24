@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "3442585332",
+    "project_id": "project-1632c",
+    "storage_bucket": "project-1632c.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:3442585332:android:7db5caddb0764625b1f8a1",
+        "android_client_info": {
+          "package_name": "com.example.chittopot"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCS8H7SYCRxOAIoiF7PhL0Ao1pVHs58w4s"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

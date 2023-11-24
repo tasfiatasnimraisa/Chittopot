@@ -1,5 +1,6 @@
 plugins {
     id 'com.android.application'
+    id 'com.google.gms.google-services'
 }
 
 android {
@@ -25,26 +26,112 @@ android {
     compileOptions {
         sourceCompatibility JavaVersion.VERSION_1_8
         targetCompatibility JavaVersion.VERSION_1_8
+
     }
+
     buildFeatures {
         mlModelBinding true
     }
 }
 
 dependencies {
+    implementation "androidx.cardview:cardview:1.0.0"
+    implementation 'androidx.recyclerview:recyclerview:1.2.1'
+
+
+    implementation 'com.google.android.exoplayer:exoplayer:2.19.1'
+    implementation 'com.google.android.exoplayer:exoplayer-core:2.19.1'
+    implementation 'com.google.android.exoplayer:exoplayer-dash:2.19.1'
+    implementation 'com.google.android.exoplayer:exoplayer-ui:2.19.1'
+    implementation 'com.google.android.exoplayer:exoplayer-smoothstreaming:2.19.1'
+    implementation 'com.google.android.exoplayer:exoplayer-hls:2.19.1'
+
+    implementation project(':exoplayer-library-core')
+    implementation project(':exoplayer-library-dash')
+    implementation project(':exoplayer-library-ui')
+
     implementation 'androidx.appcompat:appcompat:1.6.1'
     implementation 'com.google.android.material:material:1.10.0'
     implementation 'androidx.constraintlayout:constraintlayout:2.1.4'
     implementation 'org.tensorflow:tensorflow-lite-gpu:2.3.0'
+    implementation 'com.google.firebase:firebase-database:20.3.0'
+
+
+
+
+
+
+
     testImplementation 'junit:junit:4.13.2'
     androidTestImplementation 'androidx.test.ext:junit:1.1.5'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.5.1'
+    implementation platform('com.google.firebase:firebase-bom:32.5.0')
+    implementation 'com.google.firebase:firebase-analytics'
 
     implementation 'org.tensorflow:tensorflow-lite:2.8.0'
     implementation 'org.tensorflow:tensorflow-lite-support:0.3.1'
     implementation 'org.tensorflow:tensorflow-lite-metadata:0.4.0'
     implementation 'org.tensorflow:tensorflow-lite-select-tf-ops:2.8.0'
+    implementation 'com.karumi:dexter:6.2.2'
 
     implementation 'com.vdurmont:emoji-java:5.1.0'
+    implementation 'com.google.firebase:firebase-storage'
+    implementation 'com.firebaseui:firebase-ui-storage:8.0.2'
+    implementation 'com.firebaseui:firebase-ui-database:8.0.2'
+    implementation 'com.firebaseui:firebase-ui-auth:8.0.2'
 
+    def media3_version = "1.2.0"
+
+    // For media playback using ExoPlayer
+    implementation "androidx.media3:media3-exoplayer:$media3_version"
+
+    // For DASH playback support with ExoPlayer
+    implementation "androidx.media3:media3-exoplayer-dash:$media3_version"
+    // For HLS playback support with ExoPlayer
+    implementation "androidx.media3:media3-exoplayer-hls:$media3_version"
+    // For RTSP playback support with ExoPlayer
+    implementation "androidx.media3:media3-exoplayer-rtsp:$media3_version"
+    // For ad insertion using the Interactive Media Ads SDK with ExoPlayer
+    implementation "androidx.media3:media3-exoplayer-ima:$media3_version"
+
+    // For loading data using the Cronet network stack
+    implementation "androidx.media3:media3-datasource-cronet:$media3_version"
+    // For loading data using the OkHttp network stack
+    implementation "androidx.media3:media3-datasource-okhttp:$media3_version"
+    // For loading data using librtmp
+    implementation "androidx.media3:media3-datasource-rtmp:$media3_version"
+
+    // For building media playback UIs
+    implementation "androidx.media3:media3-ui:$media3_version"
+    // For building media playback UIs for Android TV using the Jetpack Leanback library
+    implementation "androidx.media3:media3-ui-leanback:$media3_version"
+
+    // For exposing and controlling media sessions
+    implementation "androidx.media3:media3-session:$media3_version"
+
+    // For extracting data from media containers
+    implementation "androidx.media3:media3-extractor:$media3_version"
+
+    // For integrating with Cast
+    implementation "androidx.media3:media3-cast:$media3_version"
+
+    // For scheduling background operations using Jetpack Work's WorkManager with ExoPlayer
+    implementation "androidx.media3:media3-exoplayer-workmanager:$media3_version"
+
+    // For transforming media files
+    implementation "androidx.media3:media3-transformer:$media3_version"
+
+    // Utilities for testing media components (including ExoPlayer components)
+    implementation "androidx.media3:media3-test-utils:$media3_version"
+    // Utilities for testing media components (including ExoPlayer components) via Robolectric
+    implementation "androidx.media3:media3-test-utils-robolectric:$media3_version"
+
+    // Common functionality for media database components
+    implementation "androidx.media3:media3-database:$media3_version"
+    // Common functionality for media decoders
+    implementation "androidx.media3:media3-decoder:$media3_version"
+    // Common functionality for loading data
+    implementation "androidx.media3:media3-datasource:$media3_version"
+    // Common functionality used across multiple media libraries
+    implementation "androidx.media3:media3-common:$media3_version"
 }

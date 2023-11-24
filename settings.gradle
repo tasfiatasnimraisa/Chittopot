@@ -14,3 +14,7 @@ dependencyResolutionManagement {
 }
 rootProject.name = "Chittopot"
 include ':app'
+
+gradle.ext.exoplayerModulePrefix = 'exoplayer-'
+apply from: file("C:/Users/ACER/OneDrive/Desktop/ExoPlayer/core_settings.gradle")
+
